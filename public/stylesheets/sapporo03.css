@@ -189,8 +189,8 @@ h3, h3 a, h3 a:hover, h3 a:visited, h4, h4 a, h4 a:hover, h4 a:visited {
 
 #sidebar {
 	float: left;
-	width: 200px;
-	margin: 0px 20px 20px 20px;
+	width: 210px;
+	margin: 0px 10px 20px 20px;
 	}
 
 #register {
@@ -252,7 +252,7 @@ h3, h3 a, h3 a:hover, h3 a:visited, h4, h4 a, h4 a:hover, h4 a:visited {
 #links li {
   list-style: none;
 	background: url(../images/sapporo03/a_mark_w.png) no-repeat top left;
-  padding: 0px 5px 0px 20px;
+  padding: 0px 0px 0px 15px;
   }
 	
 #access {
@@ -397,28 +397,26 @@ h3, h3 a, h3 a:hover, h3 a:visited, h4, h4 a, h4 a:hover, h4 a:visited {
   font-size: 140%;
   }  
 
-#admin {
+#admin, #sponsors {
   margin: 10px;
   color: #fff;
   } 
 
-#admin ul {
-  margin: 10px;
+#admin ul, #sponsors ul {
+  margin: 10px 0px 10px 0px;
   }
 
-#admin li {
-  background: none;
-  padding: 0px;
-  }
+#admin li, #sponsors li {
+  list-style: none;
+	background: url(../images/sapporo03/a_mark_w.png) no-repeat top left;
+  padding: 0px 0px 0px 15px;
+	  }
 
 #links a:link, #links a:hover, #links a:active, #links a:visited,
-#admin a:link, #admin a:hover, #admin a:active, #admin a:visited {
+#admin a:link, #admin a:hover, #admin a:active, #admin a:visited, 
+#sponsors a:link, #sponsors a:hover, #sponsors a:active, #sponsors a:visited {
   color: #fff;
   } 
-
-#admin a:before { 
-  content: url(../images/sapporo03/a_mark_w.png);
-  }
 
 #to_top{
   margin-right: 20px;

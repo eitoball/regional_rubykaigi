@@ -75,7 +75,17 @@
             (地下鉄東西線菊水駅４番出口から徒歩5分)
       #sidebar
         %h2
-          %img{:alt => 'STAFFS', :src => '/images/sapporo03/staffs_head.png', :width => "200", :height => "50"}
+          %img{:alt => 'SPONSORS', :src => '/images/sapporo03/sponsors_head.png', :width => "210", :height => "50"}
+        #sponsors
+          %ul
+            %li
+              %a{:href => 'http://antas.jp/', :target => '_blank'}
+                株式会社 アンタス
+            %li
+              %a{:href => 'http://www.enishi-tech.com/', :target => '_blank'}
+                株式会社 えにしテック
+        %h2
+          %img{:alt => 'STAFFS', :src => '/images/sapporo03/staffs_head.png', :width => "210", :height => "50"}
         #staffs
           %h4 実行委員長
           %ul
@@ -101,7 +111,7 @@
             %li kuppi
             %li @kspro
         %h2
-          %img{:alt => 'FOR ADMIN', :src => '/images/sapporo03/admin_head.png', :width => "200", :height => "50"}
+          %img{:alt => 'FOR ADMIN', :src => '/images/sapporo03/admin_head.png', :width => "210", :height => "50"}
         #admin
           %ul
             - if logged_in_as_admin?
