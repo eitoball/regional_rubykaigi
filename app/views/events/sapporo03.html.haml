@@ -120,7 +120,7 @@
             %li
               %a.not_current{:href => "/login"} Login
       #content
-        .event_desc= render :partial => "event_desc", :locals => {:event => @event}
+        .event_desc= render_piki(@event.desc)
         #forattendees
           %h2
             %img{:alt => 'FOR ATTENDEES', :src =>'/images/sapporo03/forattendees_head.png', :width => "350", :height => "50"}

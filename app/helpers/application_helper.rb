@@ -1,4 +1,5 @@
 require 'hiki_doc'
+require 'piki_doc'
 
 module ApplicationHelper
   def page_title
@@ -10,6 +11,12 @@ module ApplicationHelper
   def render_hiki(text)
     hikified = HikiDoc.to_html(text, :level => 3, :use_wiki_name => false, :allow_bracket_inline_image => false)
     hikified
+  end
+
+  def render_piki(text)
+    PikiDoc.register(PikiDoc::Bundles::Imagelink.new)
+    pikified = PikiDoc.to_xhtml(text, :level => 3, :use_wiki_name => false, :allow_bracket_inline_image => false)
+    pikified
   end
 
   def link_to_hikidoc

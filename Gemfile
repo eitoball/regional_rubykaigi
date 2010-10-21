@@ -7,6 +7,7 @@ gem 'haml'
 gem 'ruby-openid', :require => 'openid'
 gem 'sqlite3-ruby'
 gem 'rspec'
+gem 'moro-piki_doc'
 
 group :development do
   gem 'thin', :require => nil
