@@ -14,7 +14,7 @@ module ApplicationHelper
   end
 
   def render_piki(text)
-    PikiDoc.register(PikiDoc::Bundles::Imagelink.new)
+    PikiDoc.register(PikiDoc::Bundles::Imagelink.new, PikiDoc::Bundles::Anchorname.new)
     pikified = PikiDoc.to_xhtml(text, :level => 3, :use_wiki_name => false, :allow_bracket_inline_image => false)
     pikified
   end

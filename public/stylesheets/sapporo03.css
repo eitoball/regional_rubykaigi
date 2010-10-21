@@ -365,7 +365,12 @@ h3, h3 a, h3 a:hover, h3 a:visited, h4, h4 a, h4 a:hover, h4 a:visited {
 .event_desc a:before{
   content: url(../images/sapporo03/a_mark_r.png);
 	}
-	
+
+.event_desc .anchorname a:before,
+.event_desc .imagelink a:before{
+  content: none;
+	}
+		
 .event_desc h3 {
 	padding: 20px 10px 2px 0px;
 	background: url(../images/sapporo03/content_bg.png) repeat-y top left;
